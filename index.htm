@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JazzSchool</title>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="index.htm">
+        <img src="./assets/imgs/logo.svg" alt="Logo JazzSchool" />
+      </a>  
+      <nav>
+        <a href="index.htm">Início</a>
+        <a href="#" id="cursos">Cursos</a>
+        <a href="#" id="eventos">Eventos</a>
+        <a href="#" id="contato">Contato</a>
+      </nav>
+      <a href="cadastro.html" class="btn">Se Inscreva</a>
+    </header>
+
+    <!-- Seção 1 -->
+    <section>
+      <div class="container">
+        <div class="text-center">
+          <h1>
+            Crie algo <span class="highlight">impactante</span> com música
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptas qui vero quisquam impedit,
+             quaerat recusandae, inventore explicabo.
+          </p>
+          <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus eius, dignissimos corrupti maiores 
+            quae doloribus voluptatum impedit et, molestias dicta dolores deserunt deleniti 
+             modi repellat neque beatae itaque. 
+             Dicta, sapiente?</p>
+          <img src="./assets/imgs/hero-img.svg" alt="Banda de jazz tocando" />
+          <a href="#" class="btn">Comece agora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de cursos -->
+    <section class="courses-section">
+      <div class="container">
+        <div class="card-container">
+          <!-- Card 1 -->
+          <div class="card">
+            <img src="./assets/imgs/piano.png" alt="ícones de teclas de piano" class="card-img" />
+            <div class="card-body">
+              <h5 class="card-title">Piano popular</h5>
+              <p class="card-text">
+                Tocar piano online. Usa o teclado do teu computador ou clica nas teclas do piano para o tocares.
+              </p>
+              <a href="https://www.musicca.com/pt/piano" class="btn">Saiba mais</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card">
+            <img src="./assets/imgs/clef.png" alt="ícones da clave de sol" class="card-img" />
+            <div class="card-body">
+              <h5 class="card-title">Teoria musical</h5>
+              <p class="card-text">
+                Curso de teoria musical básico. Aprenda sobre notas, escalas e harmonias musicais.
+              </p>
+              <a href="#" class="btn">Saiba mais</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card">
+            <img src="./assets/imgs/sax.png" alt="ícones de saxofone" class="card-img" />
+            <div class="card-body">
+              <h5 class="card-title">Sax alto</h5>
+              <p class="card-text">
+                Aprenda a tocar saxofone alto. Entenda a técnica do instrumento e como utilizá-lo.
+              </p>
+              <a href="https://www.cifraclub.com.br/aprenda/sax/" class="btn">Saiba mais</a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="card">
+            <img src="./assets/imgs/drums.png" alt="ícones de baterias" class="card-img" />
+            <div class="card-body">
+              <h5 class="card-title">Bateria</h5>
+              <p class="card-text">
+                Toque bateria online. Usa o teclado do teu computador ou clica nos componentes da bateria virtual.
+              </p>
+              <a href="https://www.musicca.com/pt/bateria" class="btn">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <h2>E <span class="highlight">vários</span> outros!</h2>
+        <a href="#" class="btn">Conhecer os cursos</a>
+      </div>
+    </section>
+
+    <div id="resultados" class="resultados"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-column">
+            
+              <a href="index.htm">
+                <img src="./assets/imgs/logo.svg" alt="Logo JazzSchool" />
+              </a>
+              <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, eos cumque.
+              <hr>
+              </p>
+          </div>
+
+          <div class="footer-column">
+            <h5>Links Rápidos</h5>
+            <nav>
+              <a href="#">Início</a>
+              <a href="#">Cursos</a>
+              <a href="#">Eventos</a>
+              <a href="#">Contato</a>
+            </nav>
+          </div>
+
+          <div class="footer-column">
+            <h5>Receba Novidades</h5>
+            <form id="subscribeForm">
+              <input type="email" id="email" placeholder="Digite seu email" required />
+              <button type="submit" class="btn">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+/* Reset básico de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* Estilo Geral do Header */
+header {
+  background-image: linear-gradient(to right, #343a40, #e97b4e, #007bff);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  display: flex;
+  width: 180px;
+  
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+  
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  
+}
+
+header .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+/* Botão hover */
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Seção de cursos */
+.courses-section {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.courses-section h2 {
+  margin-top: 30px;
+}
+
+.highlight {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Layout dos Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  width: 48%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-img {
+  display: flex;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  background-image: linear-gradient(to right, #343a40, #e97b4e,#007bff);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+footer img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+footer .footer-logo {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+/* Estilos para a área de resultados */
+.resultados {
+  padding: 30px;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resultados h2 {
+  color: #007bff;
+}
+
+.resultados p {
+  font-size: 1.1rem;
+  color: #007bff;
+}
+
+.resultados a {
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.resultados a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+
+  header .btn {
+    margin-top: 10px;
+  }
+
+  footer nav {
+    flex-direction: column;
+  }
+
+  footer .footer-logo {
+    position: relative;
+    bottom: unset;
+    left: unset;
+    margin-top: 20px;
+  }
+}
+
