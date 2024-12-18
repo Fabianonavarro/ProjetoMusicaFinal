@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JazzSchool</title>
+
+    <!-- Links para o Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <link rel="stylesheet" href="./assets/style/style.css" />
   </head>
 
@@ -47,10 +54,12 @@
     <!-- Seção de cursos -->
     <section class="courses-section">
       <div class="container">
-        <div class="card-container">
+        <h2>Cursos Disponíveis</h2>
+        <!-- Carrossel -->
+        <div class="slick-carousel">
           <!-- Card 1 -->
           <div class="card">
-            <img src="./assets/imgs/piano.png" alt="ícones de teclas de piano" class="card-img" />
+            <img src="./assets/imgs/piano.jpg" alt="ícones de teclas de piano" class="card-img" />
             <div class="card-body">
               <h5 class="card-title">Piano popular</h5>
               <p class="card-text">
@@ -72,7 +81,7 @@
           </div>
           <!-- Card 3 -->
           <div class="card">
-            <img src="./assets/imgs/sax.png" alt="ícones de saxofone" class="card-img" />
+            <img src="./assets/imgs/sax.JPG" alt="ícones de saxofone" class="card-img" />
             <div class="card-body">
               <h5 class="card-title">Sax alto</h5>
               <p class="card-text">
@@ -83,7 +92,7 @@
           </div>
           <!-- Card 4 -->
           <div class="card">
-            <img src="./assets/imgs/drums.png" alt="ícones de baterias" class="card-img" />
+            <img src="./assets/imgs/bateria.JPG" alt="ícones de baterias" class="card-img" />
             <div class="card-body">
               <h5 class="card-title">Bateria</h5>
               <p class="card-text">
@@ -105,14 +114,13 @@
       <div class="container">
         <div class="footer-row">
           <div class="footer-column">
-            
-              <a href="index.htm">
-                <img src="./assets/imgs/logo.svg" alt="Logo JazzSchool" />
-              </a>
-              <p>
+            <a href="index.htm">
+              <img src="./assets/imgs/logo.svg" alt="Logo JazzSchool" />
+            </a>
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, eos cumque.
               <hr>
-              </p>
+            </p>
           </div>
 
           <div class="footer-column">
@@ -136,6 +144,33 @@
       </div>
     </footer>
 
-    <script src="./assets/index.js"></script>
+    <!-- Script para Inicializar o Slick Carousel -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slick-carousel').slick({
+          slidesToShow: 1,  // Número de cards por vez
+          slidesToScroll: 1,  // Número de cards que serão movidos por vez
+          autoplay: true,  // Ativa a rotação automática
+          autoplaySpeed: 2000,  // Intervalo entre os slides (em milissegundos)
+          arrows: true,  // Exibe setas para navegação
+          dots: true,  // Exibe os pontos de navegação
+          responsive: [
+            {
+              breakpoint: 768,  // Para dispositivos com largura até 768px
+              settings: {
+                slidesToShow: 1,  // Exibe um card por vez
+              }
+            },
+            {
+              breakpoint: 1024,  // Para dispositivos com largura até 1024px
+              settings: {
+                slidesToShow: 2,  // Exibe dois cards por vez
+              }
+            }
+          ]
+        });
+      });
+    </script>
+
   </body>
 </html>
